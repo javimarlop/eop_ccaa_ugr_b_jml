@@ -1,0 +1,41 @@
+## Factores limitantes. Ley de tolerancia de Shelford. Ley del mínimo de Liebig {-#factlim}
+
+Continuando con nuestro análisis de los factores ecológicos, es esencial comprender los conceptos de **factores limitantes** y las dos leyes fundamentales que nos ayudan a entender cómo estos factores operan: la **Ley del Mínimo de Liebig** y la **Ley de Tolerancia de Shelford**. Estos conceptos son cruciales para explicar por qué los organismos viven donde viven y por qué sus poblaciones tienen el tamaño que tienen.
+
+**Factores Limitantes**
+
+* **Concepto General:** Un factor limitante es cualquier factor ambiental, ya sea una condición o un recurso, cuya escasez, ausencia, o nivel desfavorable restringe el crecimiento, la abundancia o la distribución de una población de organismos en un ecosistema.
+
+Aunque muchos factores influyen sobre un organismo simultáneamente, a menudo uno o unos pocos ejercen la influencia predominante en un momento y lugar determinados, impidiendo que la población alcance su potencial máximo incluso si los demás factores son óptimos.
+
+* **Importancia:** Identificar los factores limitantes es clave en ecología para entender la estructura de las comunidades, predecir los efectos del cambio ambiental, manejar especies (tanto para conservación como para control de plagas) y optimizar la producción agrícola o forestal.
+
+### **Ley del Mínimo de Liebig** {-#liebig}
+
+* **Origen:** Formulada originalmente por **Carl Sprengel** (1828) y popularizada por el químico alemán Justus von Liebig a mediados del siglo XIX, inicialmente en el contexto de la nutrición mineral de las plantas y el rendimiento de los cultivos.
+* **Enunciado:** La ley establece que el crecimiento de un organismo (o la productividad de una población o ecosistema) no está determinado por la cantidad total de todos los recursos disponibles, sino por el **recurso que se encuentra en la menor disponibilidad en relación con las necesidades del organismo**. Es decir, el recurso más escaso actúa como el "factor limitante".
+* **Analogía:** Se suele ilustrar con el "barril de Liebig": un barril hecho con duelas (tablas) de diferente longitud. La capacidad del barril para retener agua no depende de la longitud de las duelas más largas, sino de la longitud de la **duela más corta**. Esa duela representa el recurso limitante.
+* **Aplicación Principal:** Se aplica fundamentalmente a los **Recursos** (nutrientes, agua, luz, alimento, etc.).
+* **Ejemplos:**
+    * El crecimiento del fitoplancton en muchas zonas oceánicas está limitado por la baja concentración de hierro o nitrógeno, aunque otros nutrientes como el fosfato sean abundantes. Añadir fosfato no aumentará el crecimiento; añadir el nutriente limitante sí lo hará, hasta que otro recurso pase a ser el más escaso.
+    * En muchos suelos agrícolas, el fósforo es el nutriente limitante para el crecimiento de los cultivos. La fertilización debe centrarse en suplir esa carencia específica.
+
+### **Ley de Tolerancia de Shelford** {-#shelford}
+
+* **Origen:** Propuesta por el ecólogo estadounidense Victor E. Shelford en 1911, ampliando la idea de Liebig más allá de los recursos y la simple escasez.
+* **Enunciado:** La ley establece que la presencia, abundancia y éxito de un organismo dependen de un complejo de condiciones ambientales. Cada organismo tiene un **rango de tolerancia** (un mínimo y un máximo) para cada factor ambiental (principalmente **Condiciones** como temperatura, pH, salinidad, humedad, etc.). La supervivencia y prosperidad del organismo son posibles sólo dentro de este rango. Además, existe un **rango óptimo** dentro del rango de tolerancia donde el organismo funciona mejor. A medida que el factor se aleja del óptimo hacia los límites mínimo o máximo, el organismo experimenta estrés fisiológico, y más allá de esos límites, la supervivencia es imposible.
+* **Aspectos Clave:**
+    * Introduce la idea de que no solo la escasez (mínimo) puede ser limitante, sino también el exceso (máximo). Demasiado de algo bueno (ej. temperatura, luz, incluso agua) puede ser perjudicial o letal.
+    * Define conceptos como: límites de tolerancia (mínimo y máximo), zona óptima (donde el rendimiento es máximo), y zonas de estrés fisiológico (cercanas a los límites, donde la supervivencia es posible pero el rendimiento está reducido).
+    * Gráficamente, la respuesta de un organismo (ej. tasa de crecimiento, abundancia) frente a un gradiente de una condición suele representarse como una curva en forma de campana.
+* **Aplicación Principal:** Se aplica fundamentalmente a las **Condiciones** ambientales, aunque también puede aplicarse a recursos cuando el exceso es perjudicial.
+* **Ejemplos:**
+    * Los peces de aguas frías, como la trucha, tienen un rango de tolerancia a la temperatura relativamente estrecho y no pueden sobrevivir en aguas cálidas (límite máximo superado). Los peces tropicales, por otro lado, no sobreviven en aguas muy frías (límite mínimo no alcanzado). Dentro de su rango viable, cada especie tiene una temperatura óptima para su crecimiento y reproducción.
+    * La mayoría de las plantas cultivadas tienen una baja tolerancia a la salinidad del suelo. Su crecimiento se reduce drásticamente o mueren si la salinidad excede su límite máximo de tolerancia. Las plantas halófitas, en cambio, están adaptadas a vivir en suelos muy salinos.
+    * El pH del suelo determina qué especies de plantas pueden crecer en él. Algunas especies son acidófilas (toleran pH bajo), otras basófilas (toleran pH alto), y muchas tienen un rango óptimo cercano a la neutralidad.
+
+### **Integración de ambas leyes** {-#liebigshelford}
+
+Ambas leyes son complementarias para entender los factores limitantes. Liebig se enfoca en el recurso más escaso que frena el crecimiento, mientras que Shelford se enfoca en el rango de tolerancia para las condiciones ambientales (y a veces recursos), donde tanto la falta como el exceso pueden ser limitantes para la supervivencia y el éxito general de un organismo.
+
+Un organismo puede tener todos los recursos necesarios (según Liebig), pero si una condición ambiental como la temperatura cae fuera de su rango de tolerancia (según Shelford), no podrá sobrevivir en ese lugar.

@@ -1,0 +1,37 @@
+# Tema 1 {-#tema1}
+
+## Definiciones de Ecología, objeto de estudio y encuadre en las Ciencias Ambientales {-#ecointro}
+
+### Definición de Ecología {-#ecologia}
+
+Definir la Ecología no es una tarea sencilla, principalmente por dos razones: su **origen interdisciplinar** y su **relativa juventud** como ciencia formal (nació en el siglo XIX, pero su desarrollo principal ocurrió en el XX). Además, a menudo se confunde el término científico "Ecología" con "ecologismo", que es un movimiento social y político.
+
+Dicho esto, podemos definir la Ecología como la **disciplina científica que estudia las interacciones entre los organismos y su ambiente**, y cómo estas interacciones determinan la **distribución y abundancia** de dichos organismos. Es una ciencia fundamentalmente biológica, pero muy integradora, ya que se nutre de conocimientos de otras muchas disciplinas como la Fisiología, Genética, Etología, Geología, Hidrología, Ciencias Atmosféricas, Bioquímica, etc.
+
+Podríamos considerarla como el estudio científico de las relaciones que determinan dónde se encuentran los organismos, cuántos hay y cómo interactúan entre sí y con su entorno físico y químico.
+
+### **Objeto de Estudio de la Ecología** {-#objestud}
+
+El objeto central de la Ecología son las **interacciones** que ocurren en la naturaleza en diferentes niveles de organización. Estudia:
+
+1.  **Las interacciones de los organismos individuales con su ambiente físico y químico:** Cómo factores como la temperatura, la disponibilidad de agua, la luz solar, los nutrientes del suelo, etc., afectan a la supervivencia, fisiología y comportamiento de un organismo (Tema 2). Por ejemplo, cómo una planta del desierto (como un cactus) ha desarrollado adaptaciones para conservar agua en un ambiente árido.
+
+2.  **Las interacciones entre organismos de la misma especie (poblaciones):** Estudia cómo crecen las poblaciones, cómo se regulan, su estructura de edades, la competencia intraespecífica por recursos, etc. Un ejemplo sería estudiar cómo la disponibilidad de alimento afecta al tamaño de una población de ciervos en un bosque.
+
+3.  **Las interacciones entre organismos de diferentes especies (comunidades):** Analiza la competencia interespecífica (Tema 7), la depredación (Tema 8), el parasitismo, el mutualismo (Tema 9), etc., y cómo estas interacciones estructuran las comunidades biológicas. Por ejemplo, estudiar cómo la presencia de un depredador (un lobo) afecta a las poblaciones de sus presas (ciervos) y, a su vez, a la vegetación que consumen los ciervos. Otro ejemplo clásico es la relación mutualista entre las abejas y las flores que polinizan.
+
+4.  **Las interacciones entre las comunidades biológicas y los flujos de materia y energía (ecosistemas):** Se enfoca en cómo la energía solar fluye a través de las cadenas tróficas (desde los productores como las plantas, pasando por los herbívoros hasta los carnívoros) y cómo los nutrientes (carbono, nitrógeno, fósforo) son reciclados dentro del sistema. Un ejemplo sería estudiar el ciclo del carbono en un bosque, analizando cuánta biomasa producen los árboles, cuánta es consumida por los herbívoros y cuánta es descompuesta por los microorganismos del suelo, liberando CO2 de nuevo a la atmósfera.
+
+5.  **Los patrones a gran escala (paisajes, biomas, biosfera):** Estudia la distribución de los ecosistemas en el espacio, las interacciones entre ellos (por ejemplo, cómo un río conecta diferentes ecosistemas terrestres) y los grandes patrones climáticos y biogeográficos que determinan la distribución de los biomas (como los desiertos, las selvas tropicales, las tundras, etc.) a escala global.
+
+En resumen, la Ecología busca entender los **mecanismos** que subyacen a la **distribución** (dónde viven los organismos) y la **abundancia** (cuántos organismos hay) en todos los niveles de organización biológica, desde el individuo hasta la biosfera completa.
+
+### **Encuadre en las Ciencias Ambientales** {-#ccaa}
+
+La Ecología es una **ciencia fundamental** dentro del campo más amplio y aplicado de las **Ciencias Ambientales**. Mientras que la Ecología se centra en comprender las interacciones naturales y los sistemas biológicos *per se*, las Ciencias Ambientales utilizan estos conocimientos ecológicos (y de otras disciplinas como la geología, química, sociología, economía, etc.) para:
+
+1.  **Diagnosticar problemas ambientales:** Identificar las causas y consecuencias de problemas como la contaminación, la pérdida de biodiversidad, el cambio climático, la deforestación, etc. Por ejemplo, la Ecología nos ayuda a entender cómo el exceso de nutrientes (eutrofización) afecta a los ecosistemas acuáticos, causando la proliferación de algas y la muerte de peces.
+
+2.  **Buscar soluciones a dichos problemas:** Desarrollar estrategias de conservación, restauración de ecosistemas degradados, gestión sostenible de recursos naturales, mitigación del cambio climático, etc. Por ejemplo, los principios de la ecología de poblaciones son esenciales para diseñar planes de manejo para especies en peligro de extinción o para gestionar pesquerías de forma sostenible.
+
+Podríamos decir que la **Ecología proporciona la base científica** sobre cómo funcionan los sistemas naturales, mientras que las **Ciencias Ambientales aplican ese conocimiento** (junto con el de otras áreas) para entender y resolver los problemas derivados de la interacción entre la actividad humana y el medio ambiente. La Ecología es, por tanto, una pieza clave y esencial en el engranaje de las Ciencias Ambientales.

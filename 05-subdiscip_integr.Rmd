@@ -1,0 +1,73 @@
+## Subdisciplinas ecológicas - niveles de integración {-#subdnintegr}
+
+### **Niveles de Integración (o Niveles de Organización) en Ecología** {-#nintegr}
+
+La Ecología estudia las interacciones en una amplia gama de escalas. Para facilitar este estudio, se reconoce una jerarquía de niveles de organización biológica, donde cada nivel superior incluye a los inferiores y exhibe propiedades emergentes (como discutimos anteriormente). Estos niveles son:
+
+* **Individuo (u organismo):** Es la unidad fundamental de la Ecología. En este nivel, nos centramos en cómo un organismo individual (sea una bacteria, una planta, un hongo o un animal) interactúa con su ambiente físico (abiótico) y biológico (otros organismos), y cómo sus características morfológicas, fisiológicas y comportamentales le permiten sobrevivir y reproducirse.
+    * *Ejemplos:* El estudio de la tolerancia a la temperatura de un pez específico, las adaptaciones de un cactus a la aridez, la estrategia de caza de un lobo solitario.
+
+* **Población:** Conjunto de individuos de la *misma especie* que viven en un área geográfica determinada y en un momento específico, y que interactúan entre sí (reproducción, competencia intraespecífica). La Ecología de Poblaciones estudia factores como el tamaño poblacional, la densidad, la distribución espacial, la estructura de edades y sexos, y las tasas de natalidad, mortalidad e inmigración/emigración que determinan su dinámica.
+    * *Ejemplos:* Analizar el crecimiento de una población de conejos en una isla, determinar los factores que limitan la densidad de pinos en un bosque, estudiar la distribución por edades de una población de tortugas marinas.
+
+* **Comunidad:** Conjunto de poblaciones de *diferentes especies* que viven e interactúan en la misma área geográfica. La Ecología de Comunidades se enfoca en la naturaleza de estas interacciones (competencia, depredación, parasitismo, mutualismo, comensalismo), la diversidad de especies, la estructura de la comunidad (ej. redes tróficas) y los procesos como la sucesión ecológica.
+    * *Ejemplos:* Estudiar cómo la presencia de un depredador afecta la coexistencia de varias especies presa, analizar la red alimentaria de un arrecife de coral, investigar cómo cambia la composición de especies vegetales después de un incendio (sucesión).
+
+* **Ecosistema:** Incluye a la comunidad biológica (todas las especies interactuantes) *junto con* su ambiente físico o abiótico (suelo, agua, clima, luz solar, nutrientes). La Ecología de Ecosistemas se centra en los flujos de energía y el ciclo de la materia a través de los componentes bióticos y abióticos.
+    * *Ejemplos:* Cuantificar el flujo de energía desde los productores (plantas) hasta los consumidores en una pradera, estudiar el ciclo del nitrógeno en un lago, analizar cómo la deforestación afecta el ciclo hidrológico local.
+
+* **Paisaje:** Mosaico heterogéneo de ecosistemas interactuantes en una región geográfica más amplia. La Ecología del Paisaje estudia la estructura espacial de los paisajes (composición y configuración de los parches de ecosistemas), cómo esta estructura afecta los procesos ecológicos (como el movimiento de organismos o el flujo de nutrientes entre ecosistemas) y cómo cambia con el tiempo debido a factores naturales o humanos.
+    * *Ejemplos:* Investigar cómo la fragmentación de un bosque afecta la dispersión de las aves, estudiar el papel de los corredores ecológicos para conectar poblaciones de mamíferos, analizar el impacto de la urbanización en los patrones de drenaje de un área.
+
+* **Bioma:** Grandes unidades ecológicas regionales caracterizadas por un tipo particular de clima y una forma de vida vegetal dominante. Son reconocibles a escala continental.
+    * *Ejemplos:* La tundra ártica, el bosque tropical lluvioso, el desierto subtropical, la taiga (bosque boreal), la sabana.
+
+* **Biosfera (o Ecósfera):** Es el nivel más alto de organización ecológica. Comprende la suma de todos los ecosistemas del planeta Tierra, es decir, la parte del planeta donde existe vida, incluyendo las interacciones a escala global entre los organismos y la litosfera, hidrosfera y atmósfera. La Ecología Global estudia procesos a esta escala.
+    * *Ejemplos:* El ciclo global del carbono y su relación con el cambio climático, los patrones globales de biodiversidad, el impacto de la contaminación atmosférica a gran escala.
+
+Es importante recordar que estos niveles están interconectados y lo que ocurre en un nivel puede influir en los demás.
+
+### **Subdisciplinas Ecológicas** {-#subdisc}
+
+Dada la amplitud temática y la variedad de enfoques y escalas, la Ecología se ha diversificado en numerosas subdisciplinas. Estas a menudo se solapan y se definen según diferentes criterios:
+
+* **Según el nivel de organización principal:**
+    * **Autoecología:** Estudio del individuo y sus interacciones con el ambiente (solapa con Ecofisiología y Ecología del Comportamiento).
+    * **Ecología de Poblaciones (Demoecología):** Enfocada en la dinámica de las poblaciones.
+    * **Ecología de Comunidades (Sinecología):** Centrada en las interacciones entre especies y la estructura comunitaria.
+    * **Ecología de Ecosistemas:** Estudio de los flujos de energía y materia.
+    * **Ecología del Paisaje:** Análisis de patrones y procesos a escala de paisaje.
+    * **Ecología Global:** Investigación de procesos a escala planetaria.
+    * **Macroecología:** Busca patrones estadísticos generales en la distribución, abundancia y diversidad de especies a grandes escalas espaciales y temporales.
+
+* **Según el grupo taxonómico estudiado:**
+    * **Ecología Vegetal:** Centrada en las plantas.
+    * **Ecología Animal:** Centrada en los animales.
+    * **Ecología Microbiana:** Centrada en microorganismos (bacterias, arqueas, protistas, hongos microscópicos).
+
+* **Según el tipo de ambiente o hábitat:**
+    * **Ecología Terrestre:** Estudia los ecosistemas terrestres.
+    * **Ecología Acuática:** Estudia los ecosistemas acuáticos, que a su vez se divide en:
+        * **Limnología:** Ecología de aguas continentales (lagos, ríos, humedales).
+        * **Ecología Marina:** Ecología de océanos y mares.
+    * **Ecología del Suelo:** Enfocada en los organismos y procesos del suelo.
+    * **Ecología Urbana:** Estudia los ecosistemas en entornos urbanos.
+
+* **Según el enfoque o la perspectiva metodológica:**
+    * **Ecología Evolutiva:** Integra ecología y evolución (como vimos antes).
+    * **Ecología del Comportamiento:** Estudia la base ecológica y evolutiva del comportamiento animal.
+    * **Ecología Fisiológica (Ecofisiología):** Investiga cómo la fisiología de los organismos determina sus interacciones ecológicas.
+    * **Ecología Química:** Se centra en el papel de las sustancias químicas en las interacciones entre organismos y entre organismos y su ambiente.
+    * **Ecología Molecular:** Utiliza herramientas moleculares (ADN, ARN, proteínas) para abordar cuestiones ecológicas (ej. filogeografía, genética de poblaciones, identificación de especies).
+    * **Ecología Teórica:** Desarrolla modelos matemáticos y computacionales para comprender principios ecológicos.
+    * **Ecología Funcional:** Se enfoca en los rasgos (*traits*) de los organismos y cómo estos determinan las funciones ecosistémicas, más que en la identidad taxonómica.
+
+* **Según su aplicación:**
+    * **Ecología de la Conservación:** Aplica principios ecológicos para la protección y manejo de la biodiversidad.
+    * **Ecología de la Restauración:** Busca restaurar ecosistemas degradados.
+    * **Agroecología:** Aplica principios ecológicos al diseño y manejo de sistemas agrícolas sostenibles.
+    * **Ecología Industrial:** Busca optimizar los flujos de materia y energía en los sistemas industriales inspirándose en los ecosistemas naturales.
+    * **Ecología Humana:** Estudia las interacciones entre las sociedades humanas y su ambiente.
+    * **Toxicología Ambiental (Ecotoxicología):** Estudia los efectos de los contaminantes en los organismos y ecosistemas.
+
+Esta lista no es exhaustiva y continuamente surgen nuevas áreas de especialización. La fortaleza de la Ecología reside en su capacidad para integrar conocimientos de estos distintos niveles y subdisciplinas para abordar la complejidad del mundo natural.

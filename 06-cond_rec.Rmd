@@ -1,0 +1,51 @@
+# Tema 2 {-#tema2}
+
+## Factores ecológicos. Condiciones y recursos {-#condrec}
+
+En términos generales, los **factores ecológicos** son todos aquellos componentes del ambiente, tanto abióticos (físicos y químicos) como bióticos (otros organismos), que afectan a los seres vivos, influyendo en su supervivencia, crecimiento, desarrollo, reproducción y, en última instancia, en su distribución y abundancia.
+
+La distinción clave entre condiciones y recursos radica en cómo interactúan los organismos con ellos:
+
+### **Condiciones** {-#condiciones}
+
+* **Definición:** Las condiciones son factores ambientales abióticos que varían en el espacio y en el tiempo y a los cuales los organismos responden de forma diferente (con rangos de tolerancia, óptimos, etc.), pero que **no son consumidos ni agotados** por la actividad de los propios organismos. Influyen en las tasas de los procesos fisiológicos (metabolismo, crecimiento, etc.) pero no se "gastan".
+* **Características Clave:**
+    * No son consumibles ni reducibles por los organismos.
+    * Los organismos suelen presentar respuestas fisiológicas específicas (curvas de tolerancia) con límites mínimos y máximos, y un rango óptimo.
+    * Pueden ser modificadas por la presencia de organismos (ej. la sombra de un árbol modifica la temperatura del suelo), pero no son "utilizadas" en el sentido de agotamiento.
+* **Ejemplos:**
+    * **Temperatura:** Un factor físico crucial que afecta la tasa metabólica, la actividad enzimática y la distribución geográfica de las especies. Los organismos son poiquilotermos (su temperatura varía con el ambiente) u homeotermos (regulan su temperatura interna), pero no "consumen" la temperatura. Por ejemplo, las heladas pueden matar a ciertas plantas (condición letal), mientras que otras tienen adaptaciones para sobrevivir (tolerancia).
+    * **pH (acidez o alcalinidad):** Afecta la fisiología celular y la disponibilidad de nutrientes en el suelo o el agua. Las plantas y los microorganismos del suelo tienen rangos de pH óptimos para su crecimiento. Los organismos acuáticos también son sensibles a cambios en el pH del agua.
+    * **Salinidad:** La concentración de sales disueltas, especialmente importante en ambientes acuáticos y suelos costeros o áridos. Afecta el balance hídrico y osmótico de los organismos. Por ejemplo, la mayoría de los peces de agua dulce no pueden sobrevivir en agua de mar y viceversa debido a esta condición.
+    * **Humedad relativa del aire / Potencial hídrico del suelo:** Determinan la disponibilidad de agua para los organismos terrestres, afectando la transpiración en plantas y la pérdida de agua en animales.
+    * **Velocidad de la corriente (agua o viento):** Puede afectar la capacidad de los organismos para mantenerse en un lugar, su morfología (ej. plantas achatadas por el viento), la dispersión de propágulos, etc. No es consumida.
+    * **Concentración de tóxicos o contaminantes:** Sustancias como metales pesados o pesticidas actúan como condiciones estresantes o letales, afectando la fisiología sin ser "consumidas" en el sentido ecológico de un recurso.
+
+### **Recursos** {-#recursos}
+
+* **Definición:** Los recursos son todas aquellas "cosas" (energía, materia, espacio) que **son consumidas o utilizadas** por los organismos para su mantenimiento, crecimiento y reproducción. Como resultado de este consumo, la cantidad de recurso disponible para otros organismos (o para el mismo organismo en el futuro) disminuye. Son el objeto de la competencia.
+* **Características Clave:**
+    * Son consumibles y, por tanto, potencialmente agotables o limitantes.
+    * Su disponibilidad afecta directamente las tasas de crecimiento poblacional.
+    * Los organismos pueden competir por ellos (competencia intraespecífica e interespecífica).
+* **Ejemplos:**
+    * **Energía:**
+        * *Radiación solar:* Recurso energético fundamental para los organismos fotosintéticos (plantas, algas, cianobacterias). La competencia por la luz es evidente en los bosques.
+        * *Energía química:* Contenida en las moléculas orgánicas que consumen los heterótrofos (herbívoros, carnívoros, detritívoros, descomponedores). El alimento es un recurso clave.
+    * **Materia / Nutrientes:**
+        * *Agua:* Esencial para todos los organismos. Aunque es una condición en el medio acuático, en el medio terrestre es claramente consumida (bebida por animales, absorbida por plantas) y su disponibilidad puede ser limitante y generar competencia.
+        * *Nutrientes minerales:* Elementos como Nitrógeno (N), Fósforo (P), Potasio (K), etc., que las plantas absorben del suelo y los microorganismos del medio. A menudo son limitantes para el crecimiento vegetal o microbiano.
+        * *Dióxido de Carbono (CO₂):* Recurso para la fotosíntesis.
+        * *Oxígeno (O₂):* Recurso para la respiración aeróbica. Aunque es una condición en ambientes terrestres, representa un recurso en ambientes acuáticos donde su concentración puede ser baja.
+    * **Espacio:**
+        * *Territorio:* Área defendida por un animal que contiene recursos necesarios (alimento, refugio, parejas).
+        * *Sitios de anidación o refugio:* Cavidades en árboles, madrigueras, etc.
+        * *Espacio para crecer:* Para organismos sésiles como plantas, corales o percebes, el espacio físico sobre el sustrato es un recurso esencial para establecerse, crecer y acceder a otros recursos como la luz o los nutrientes del agua.
+    * **Alimento/Presas:** El recurso más obvio para los consumidores.
+    * **Parejas sexuales:** Desde una perspectiva poblacional, el acceso a parejas puede considerarse un recurso limitante para la reproducción.
+
+### **Distinción clave resumida entre condición y recurso** {-#condrec}
+
+Las condiciones establecen el marco ambiental donde la vida es posible y afectan a cómo funcionan los organismos, mientras que los recursos son lo que los organismos consumen para vivir, crecer y reproducirse, y por lo cual compiten.
+
+Es importante notar que la distinción no siempre es absolutamente nítida. El agua, por ejemplo, es consumida (recurso) pero su presencia o ausencia general en el ambiente (humedad) también actúa como una condición. Sin embargo, esta clasificación es muy valiosa conceptualmente para analizar cómo los diferentes aspectos del ambiente influyen en los organismos y estructuran las comunidades ecológicas.

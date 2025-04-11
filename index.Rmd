@@ -1,0 +1,17 @@
+--- 
+title: "Apuntes de la asignatura de Ecología de Organismos y Poblaciones de CCAA (grupo B - Temas 1, 2.1, 3, 7, 8 y 9)"
+author: "Javier Martínez-López (Departamento de Ecología - Universidad de Granada)"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: javimarlop/eop-ccaa-ugr-b-jml
+description: "Ecología de Organismos y Poblaciones de CCAA (grupo B)."
+---
+
+# Sobre estos apuntes {-#intro}
+
+Estos apuntes complementan el temario explicado en las clases teóricas de la asignatura en relación a los temas 1, 2.1, 3, 7, 8 y 9 de la asignatura. El contenido ha sido elaborado con fines educativos por el autor con ayuda de modelos de inteligencia artificial para sintetizar la información y generar preguntas de repaso y autoevaluación.
