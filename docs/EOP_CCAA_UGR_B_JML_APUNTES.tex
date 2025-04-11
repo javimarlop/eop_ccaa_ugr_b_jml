@@ -1,0 +1,897 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{book}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Apuntes de la asignatura de Ecología de Organismos y Poblaciones de CCAA (grupo B - Temas 1, 2.1, 3, 7, 8 y 9)},
+  pdfauthor={Javier Martínez-López (Departamento de Ecología - Universidad de Granada)},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Apuntes de la asignatura de Ecología de Organismos y Poblaciones de CCAA (grupo B - Temas 1, 2.1, 3, 7, 8 y 9)}
+\author{Javier Martínez-López (Departamento de Ecología - Universidad de Granada)}
+\date{2025-04-11}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter*{Sobre estos apuntes}\label{intro}
+\addcontentsline{toc}{chapter}{Sobre estos apuntes}
+
+Estos apuntes complementan el temario explicado en las clases teóricas de la asignatura en relación a los temas 1, 2.1, 3, 7, 8 y 9 de la asignatura. El contenido ha sido elaborado con fines educativos por el autor con ayuda de modelos de inteligencia artificial para sintetizar la información y generar preguntas de repaso y autoevaluación.
+
+\chapter*{Tema 1}\label{tema1}
+\addcontentsline{toc}{chapter}{Tema 1}
+
+\section*{Definiciones de Ecología, objeto de estudio y encuadre en las Ciencias Ambientales}\label{ecointro}
+\addcontentsline{toc}{section}{Definiciones de Ecología, objeto de estudio y encuadre en las Ciencias Ambientales}
+
+\subsection*{Definición de Ecología}\label{ecologia}
+\addcontentsline{toc}{subsection}{Definición de Ecología}
+
+Definir la Ecología no es una tarea sencilla, principalmente por dos razones: su \textbf{origen interdisciplinar} y su \textbf{relativa juventud} como ciencia formal (nació en el siglo XIX, pero su desarrollo principal ocurrió en el XX). Además, a menudo se confunde el término científico ``Ecología'' con ``ecologismo'', que es un movimiento social y político.
+
+Dicho esto, podemos definir la Ecología como la \textbf{disciplina científica que estudia las interacciones entre los organismos y su ambiente}, y cómo estas interacciones determinan la \textbf{distribución y abundancia} de dichos organismos. Es una ciencia fundamentalmente biológica, pero muy integradora, ya que se nutre de conocimientos de otras muchas disciplinas como la Fisiología, Genética, Etología, Geología, Hidrología, Ciencias Atmosféricas, Bioquímica, etc.
+
+Podríamos considerarla como el estudio científico de las relaciones que determinan dónde se encuentran los organismos, cuántos hay y cómo interactúan entre sí y con su entorno físico y químico.
+
+\subsection*{\texorpdfstring{\textbf{Objeto de Estudio de la Ecología}}{Objeto de Estudio de la Ecología}}\label{objestud}
+\addcontentsline{toc}{subsection}{\textbf{Objeto de Estudio de la Ecología}}
+
+El objeto central de la Ecología son las \textbf{interacciones} que ocurren en la naturaleza en diferentes niveles de organización. Estudia:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Las interacciones de los organismos individuales con su ambiente físico y químico:} Cómo factores como la temperatura, la disponibilidad de agua, la luz solar, los nutrientes del suelo, etc., afectan a la supervivencia, fisiología y comportamiento de un organismo (Tema 2). Por ejemplo, cómo una planta del desierto (como un cactus) ha desarrollado adaptaciones para conservar agua en un ambiente árido.
+\item
+  \textbf{Las interacciones entre organismos de la misma especie (poblaciones):} Estudia cómo crecen las poblaciones, cómo se regulan, su estructura de edades, la competencia intraespecífica por recursos, etc. Un ejemplo sería estudiar cómo la disponibilidad de alimento afecta al tamaño de una población de ciervos en un bosque.
+\item
+  \textbf{Las interacciones entre organismos de diferentes especies (comunidades):} Analiza la competencia interespecífica (Tema 7), la depredación (Tema 8), el parasitismo, el mutualismo (Tema 9), etc., y cómo estas interacciones estructuran las comunidades biológicas. Por ejemplo, estudiar cómo la presencia de un depredador (un lobo) afecta a las poblaciones de sus presas (ciervos) y, a su vez, a la vegetación que consumen los ciervos. Otro ejemplo clásico es la relación mutualista entre las abejas y las flores que polinizan.
+\item
+  \textbf{Las interacciones entre las comunidades biológicas y los flujos de materia y energía (ecosistemas):} Se enfoca en cómo la energía solar fluye a través de las cadenas tróficas (desde los productores como las plantas, pasando por los herbívoros hasta los carnívoros) y cómo los nutrientes (carbono, nitrógeno, fósforo) son reciclados dentro del sistema. Un ejemplo sería estudiar el ciclo del carbono en un bosque, analizando cuánta biomasa producen los árboles, cuánta es consumida por los herbívoros y cuánta es descompuesta por los microorganismos del suelo, liberando CO2 de nuevo a la atmósfera.
+\item
+  \textbf{Los patrones a gran escala (paisajes, biomas, biosfera):} Estudia la distribución de los ecosistemas en el espacio, las interacciones entre ellos (por ejemplo, cómo un río conecta diferentes ecosistemas terrestres) y los grandes patrones climáticos y biogeográficos que determinan la distribución de los biomas (como los desiertos, las selvas tropicales, las tundras, etc.) a escala global.
+\end{enumerate}
+
+En resumen, la Ecología busca entender los \textbf{mecanismos} que subyacen a la \textbf{distribución} (dónde viven los organismos) y la \textbf{abundancia} (cuántos organismos hay) en todos los niveles de organización biológica, desde el individuo hasta la biosfera completa.
+
+\subsection*{\texorpdfstring{\textbf{Encuadre en las Ciencias Ambientales}}{Encuadre en las Ciencias Ambientales}}\label{ccaa}
+\addcontentsline{toc}{subsection}{\textbf{Encuadre en las Ciencias Ambientales}}
+
+La Ecología es una \textbf{ciencia fundamental} dentro del campo más amplio y aplicado de las \textbf{Ciencias Ambientales}. Mientras que la Ecología se centra en comprender las interacciones naturales y los sistemas biológicos \emph{per se}, las Ciencias Ambientales utilizan estos conocimientos ecológicos (y de otras disciplinas como la geología, química, sociología, economía, etc.) para:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Diagnosticar problemas ambientales:} Identificar las causas y consecuencias de problemas como la contaminación, la pérdida de biodiversidad, el cambio climático, la deforestación, etc. Por ejemplo, la Ecología nos ayuda a entender cómo el exceso de nutrientes (eutrofización) afecta a los ecosistemas acuáticos, causando la proliferación de algas y la muerte de peces.
+\item
+  \textbf{Buscar soluciones a dichos problemas:} Desarrollar estrategias de conservación, restauración de ecosistemas degradados, gestión sostenible de recursos naturales, mitigación del cambio climático, etc. Por ejemplo, los principios de la ecología de poblaciones son esenciales para diseñar planes de manejo para especies en peligro de extinción o para gestionar pesquerías de forma sostenible.
+\end{enumerate}
+
+Podríamos decir que la \textbf{Ecología proporciona la base científica} sobre cómo funcionan los sistemas naturales, mientras que las \textbf{Ciencias Ambientales aplican ese conocimiento} (junto con el de otras áreas) para entender y resolver los problemas derivados de la interacción entre la actividad humana y el medio ambiente. La Ecología es, por tanto, una pieza clave y esencial en el engranaje de las Ciencias Ambientales.
+
+\section*{Breve Historia de la Ecología: nacimiento y desarrollo como Ciencia}\label{historia}
+\addcontentsline{toc}{section}{Breve Historia de la Ecología: nacimiento y desarrollo como Ciencia}
+
+\subsection*{\texorpdfstring{\textbf{Raíces y Nacimiento (Antes del Siglo XIX - Finales del XIX)}}{Raíces y Nacimiento (Antes del Siglo XIX - Finales del XIX)}}\label{raices}
+\addcontentsline{toc}{subsection}{\textbf{Raíces y Nacimiento (Antes del Siglo XIX - Finales del XIX)}}
+
+Aunque la palabra ``Ecología'' es relativamente reciente, el interés por las relaciones entre los organismos y su entorno es tan antiguo como la propia humanidad. Desde los primeros cazadores-recolectores hasta las civilizaciones agrícolas, el conocimiento empírico sobre dónde encontrar recursos, cómo evitar peligros o cómo cultivar plantas era, en esencia, conocimiento ecológico práctico.
+
+Filósofos de la antigua Grecia como \textbf{Aristóteles} y \textbf{Teofrasto} ya realizaron observaciones detalladas sobre la historia natural de animales y plantas, incluyendo descripciones de sus hábitats y comportamientos, que hoy consideraríamos precursoras de la Ecología.
+
+Sin embargo, la Ecología como disciplina científica diferenciada comenzó a tomar forma mucho más tarde. Durante los siglos XVII, XVIII y principios del XIX, naturalistas como \textbf{Antonie van Leeuwenhoek} (pionero en microscopía), \textbf{Carl Linneo} (con su sistema de clasificación binomial sentó bases para estudiar la distribución) y, sobre todo, \textbf{Alexander von Humboldt} (considerado por muchos el ``padre de la geografía física'' y precursor de la ecología), realizaron viajes y estudios que sentaron las bases para entender la distribución geográfica de las especies y su relación con factores ambientales como el clima. Los trabajos de \textbf{Charles Darwin} sobre la evolución por selección natural, con su énfasis en la ``lucha por la existencia'' y las interacciones entre organismos y ambiente, también fueron cruciales.
+
+El término ``Ecología'' (del griego \emph{oikos}, casa o lugar para vivir, y \emph{logos}, estudio) fue acuñado formalmente por el biólogo alemán \textbf{Ernst Haeckel} en \textbf{1866}. Aunque Haeckel no desarrolló extensamente el campo, sí le dio nombre y una primera definición, entendiéndola como el estudio de las relaciones de un organismo con su ambiente orgánico e inorgánico.
+
+\subsection*{\texorpdfstring{\textbf{Primer Desarrollo (Finales del XIX - Mediados del XX)}}{Primer Desarrollo (Finales del XIX - Mediados del XX)}}\label{primerd}
+\addcontentsline{toc}{subsection}{\textbf{Primer Desarrollo (Finales del XIX - Mediados del XX)}}
+
+A finales del siglo XIX y principios del XX, la Ecología comenzó a desarrollarse de forma más sistemática:
+
+Científicos como \textbf{Frederic Clements} y \textbf{Henry Gleason} en Estados Unidos fueron pioneros. Clements desarrolló la influyente (aunque luego debatida) teoría de la sucesión ecológica hacia una comunidad clímax estable. Gleason, en contraste, propuso una visión más individualista de las comunidades vegetales.
+
+Paralelamente, investigadores como \textbf{Charles Elton} en Inglaterra realizaron estudios fundamentales sobre la dinámica de poblaciones animales, las cadenas tróficas y el concepto de ``nicho ecológico'' (el papel funcional de una especie en la comunidad).
+
+\textbf{Modelización Matemática:} Las bases de la ecología de poblaciones teórica se establecieron con los trabajos independientes de \textbf{Alfred Lotka} y \textbf{Vito Volterra} en los años 20, quienes desarrollaron modelos matemáticos para describir la dinámica de poblaciones y las interacciones depredador-presa y competencia.
+
+\subsection*{\texorpdfstring{\textbf{Consolidación e Integración (Mediados del XX - Finales del XX)}}{Consolidación e Integración (Mediados del XX - Finales del XX)}}\label{consolid}
+\addcontentsline{toc}{subsection}{\textbf{Consolidación e Integración (Mediados del XX - Finales del XX)}}
+
+A mediados del siglo XX, la Ecología experimentó una gran expansión y consolidación:
+
+\textbf{Concepto de Ecosistema:} Aunque ya esbozado antes, \textbf{Arthur Tansley} (1935) acuñó el término ``ecosistema'', enfatizando la necesidad de estudiar conjuntamente los componentes bióticos (la comunidad) y abióticos (el biotopo) y sus interacciones como una unidad funcional. El trabajo de \textbf{Raymond Lindeman} (1942) sobre el flujo de energía en un lago (Cedar Bog Lake) fue fundamental para establecer la ecología de ecosistemas como un campo de estudio cuantitativo.
+
+\textbf{Ecología de Poblaciones y Comunidades:} Se desarrollaron modelos más sofisticados para la dinámica poblacional (crecimiento logístico, regulación dependiente de la densidad) y se avanzó enormemente en el estudio de la competencia, la depredación y la estructura de las comunidades, con figuras clave como \textbf{G. Evelyn Hutchinson} (quien formalizó el concepto de nicho multidimensional), \textbf{Robert MacArthur} (pionero en ecología teórica y biogeografía de islas junto a E.O. Wilson) y \textbf{Joseph Connell} (con sus experimentos sobre competencia en el intermareal).
+
+\textbf{Ecología Evolutiva:} La síntesis entre la Ecología y la Teoría Evolutiva se fortaleció, dando lugar a la Ecología Evolutiva, que examina cómo las interacciones ecológicas actúan como presiones selectivas que moldean la evolución de las especies, y cómo la historia evolutiva de las especies influye en sus interacciones ecológicas actuales.
+
+\subsection*{\texorpdfstring{\textbf{Ecología Contemporánea (Finales del XX - Actualidad)}}{Ecología Contemporánea (Finales del XX - Actualidad)}}\label{contemp}
+\addcontentsline{toc}{subsection}{\textbf{Ecología Contemporánea (Finales del XX - Actualidad)}}
+
+Desde las últimas décadas del siglo XX hasta hoy, la Ecología ha seguido diversificándose y abordando nuevos desafíos:
+
+\begin{itemize}
+\item
+  \textbf{Nuevas Subdisciplinas:} Han surgido o se han consolidado campos como la Ecología del Paisaje, la Macroecología, la Ecología Molecular, la Ecología Urbana, la Ecología de la Conservación (como respuesta a la crisis de biodiversidad), la Ecología de la Restauración y la Ecología Funcional.
+\item
+  \textbf{Enfoque en la Escala Global:} La creciente preocupación por problemas ambientales globales como el cambio climático, la pérdida de ozono o la invasión de especies ha impulsado la investigación a escalas espaciales y temporales más amplias.
+\item
+  \textbf{Interdisciplinariedad:} La colaboración con otras ciencias (sociales, económicas, de la salud) es cada vez más importante para abordar la complejidad de los sistemas socio-ecológicos (e.g.~los servicios ecosistémicos).
+\item
+  \textbf{Herramientas:} El uso de Sistemas de Información Geográfica (SIG), sensores remotos, análisis moleculares, modelos computacionales complejos y grandes bases de datos se ha vuelto fundamental.
+\end{itemize}
+
+En resumen, la Ecología ha pasado de ser un conjunto de observaciones de historia natural a convertirse en una ciencia rigurosa, cuantitativa y predictiva, fundamental para entender el funcionamiento del planeta y para buscar soluciones a los desafíos ambientales actuales.
+
+\section*{El método científico en Ecología - generación de hipótesis, modelos y diseños experimentales.}\label{metodo}
+\addcontentsline{toc}{section}{El método científico en Ecología - generación de hipótesis, modelos y diseños experimentales.}
+
+La Ecología, como cualquier otra ciencia rigurosa, se basa fundamentalmente en el \textbf{método científico} para construir conocimiento sobre el mundo natural. Vamos a desglosar cómo se aplica este método en nuestra disciplina, centrándonos en la generación de hipótesis, el uso de modelos y los diseños experimentales.
+
+El proceso general sigue estos pasos clave:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Observación:} Todo comienza con la observación de patrones en la naturaleza. Un ecólogo puede observar, por ejemplo, que una especie de planta crece abundantemente en las laderas orientadas al norte de una montaña, pero es escasa en las laderas orientadas al sur. O quizás observa que las poblaciones de un insecto fluctúan drásticamente de un año a otro.
+\item
+  \textbf{Formulación de la Pregunta:} La observación lleva a plantear preguntas específicas. Siguiendo los ejemplos: ¿Por qué la planta prefiere las laderas norte? ¿Qué factores causan las fluctuaciones en la población de insectos?
+\item
+  \textbf{Generación de Hipótesis:} Este es un paso crucial. Una hipótesis es una \textbf{explicación tentativa y comprobable} para la observación o pregunta planteada. Es fundamental que una hipótesis científica sea \textbf{falsificable}, es decir, que exista la posibilidad de demostrar que es incorrecta mediante evidencia empírica. No es una simple suposición, sino una propuesta informada, a menudo basada en conocimientos previos o teorías existentes:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Ejemplo 1 (Planta ladera norte):}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \emph{Hipótesis Nula (H₀):} No hay diferencia en la abundancia de la planta entre laderas norte y sur debido a factores ambientales locales (esta es la hipótesis que intentamos rechazar).
+    \item
+      \emph{Hipótesis Alternativa 1 (H₁):} La planta es más abundante en laderas norte porque la temperatura del suelo es más baja y la humedad es mayor, condiciones que favorecen su germinación y crecimiento.
+    \item
+      \emph{Hipótesis Alternativa 2 (H₂):} La planta es más abundante en laderas norte porque allí su principal herbívoro es menos activo.
+    \item
+      \emph{Hipótesis Alternativa 3\ldots{}}
+    \end{itemize}
+  \item
+    \textbf{Ejemplo 2 (Insecto):}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \emph{Hipótesis Nula (H₀):} Las fluctuaciones poblacionales del insecto son aleatorias y no están relacionadas con la disponibilidad de alimento.
+    \item
+      \emph{Hipótesis Alternativa 1 (H₁):} Las fluctuaciones poblacionales del insecto están causadas por variaciones anuales en la abundancia de su planta hospedadora principal.
+    \item
+      \emph{Hipótesis Alternativa 2 (H₂):} Las fluctuaciones poblacionales del insecto se deben a ciclos de depredación por parte de un ave especialista.
+    \end{itemize}
+  \end{itemize}
+
+  Es importante generar múltiples hipótesis alternativas para evitar sesgos y explorar diferentes explicaciones posibles.
+\item
+  \textbf{Realización de Predicciones:} A partir de cada hipótesis, se derivan predicciones específicas que puedan ser puestas a prueba.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Ejemplo 1 (Planta):} Si H₁ es correcta, predecimos que al medir la temperatura y humedad del suelo en ambas laderas, encontraremos valores significativamente más bajos de temperatura y más altos de humedad en el norte. También predeciríamos que si trasplantamos individuos a la ladera sur y les proporcionamos sombra y riego adicional, su supervivencia aumentará.
+  \item
+    \textbf{Ejemplo 2 (Insecto):} Si H₁ es correcta, predecimos que habrá una correlación positiva significativa entre la abundancia de la planta hospedadora en un año y la abundancia del insecto al año siguiente.
+  \end{itemize}
+\item
+  \textbf{Puesta a Prueba:} Aquí es donde entran en juego los \textbf{modelos y los experimentos} (y también los estudios observacionales) para recoger datos que permitan evaluar las predicciones.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{5.1 Modelos en Ecología:} Los modelos son representaciones simplificadas de la realidad que nos ayudan a entender sistemas complejos, explorar el comportamiento teórico de las hipótesis y generar predicciones. Pueden ser:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Conceptuales:} Diagramas de flujo o esquemas que representan relaciones causales (ej. un diagrama de las interacciones en una cadena trófica).
+    \item
+      \textbf{Matemáticos/Analíticos:} Ecuaciones que describen procesos ecológicos (ej. los modelos de Lotka-Volterra para la competencia o depredación, el modelo de crecimiento logístico poblacional). Permiten explorar teóricamente las consecuencias de ciertas interacciones.
+    \item
+      \textbf{De dinámica de sistemas:} Modelos computacionales que simulan el comportamiento de sistemas ecológicos complejos a lo largo del tiempo, incorporando variabilidad, procesos de retroalimentación positiva y negativa y múltiples factores (ej. simular el efecto del cambio climático en la distribución de una especie). Son útiles cuando los sistemas son demasiado complejos para modelos analíticos o experimentación directa.
+    \item
+      \textbf{Estadísticos:} Se utilizan para describir patrones en los datos y probar hipótesis a partir de datos observacionales o experimentales (ej. modelos de regresión para relacionar la abundancia de una especie con variables ambientales).
+    \end{itemize}
+  \item
+    \textbf{5.2 Diseños Experimentales:} Son la herramienta más potente para establecer relaciones causa-efecto, ya que implican la \textbf{manipulación} de una variable (variable independiente) y la observación del efecto sobre otra (variable dependiente), manteniendo constantes otras condiciones. Tipos comunes en Ecología:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Experimentos de Laboratorio:} Se realizan en condiciones muy controladas (temperatura, luz, etc.). Permiten aislar el efecto de variables específicas, pero pueden carecer de realismo ecológico. \emph{Ejemplo:} Cultivar la planta del ejemplo 1 en cámaras de crecimiento con diferentes niveles controlados de temperatura y humedad.
+    \item
+      \textbf{Experimentos de Campo:} Se realizan en el ambiente natural, manipulando alguna condición. Son más realistas pero más difíciles de controlar (variables climáticas inesperadas, interferencias). Es crucial incluir \textbf{controles} (parcelas o individuos no manipulados) y \textbf{réplicas} (repetir el tratamiento varias veces) para asegurar que los efectos observados se deben a la manipulación y no al azar. \emph{Ejemplo:} En la ladera sur, establecer parcelas donde se añada agua artificialmente y otras parcelas control sin riego, y comparar la supervivencia de la planta.
+    \item
+      \textbf{Experimentos Naturales:} Aprovechan ``manipulaciones'' que ocurren de forma natural (incendios, erupciones volcánicas, introducción accidental de especies, diferencias entre islas) para comparar situaciones. No hay manipulación directa por el investigador, por lo que establecer causalidad es más difícil (puede haber otras diferencias no controladas entre los sitios), pero permiten estudiar procesos a gran escala o a largo plazo que son imposibles de manipular experimentalmente. \emph{Ejemplo:} Comparar la composición de especies en islas de diferente tamaño creadas por la subida del nivel del mar.
+    \end{itemize}
+  \item
+    \textbf{5.3 Estudios Observacionales:} Cuando la manipulación no es posible o no es ética (ej. estudiar el efecto de un contaminante en poblaciones humanas o en especies protegidas), se recurre a la observación sistemática y la toma de datos para buscar correlaciones entre variables. \emph{Ejemplo:} Medir la concentración de un contaminante en diferentes lagos y relacionarla con la diversidad de peces encontrada en cada uno. La correlación no implica necesariamente causalidad, pero puede sugerir hipótesis a probar por otros medios si es posible.
+  \end{itemize}
+\item
+  \textbf{Análisis de Datos:} Se utilizan herramientas estadísticas para analizar los datos recogidos en los experimentos u observaciones y determinar si los resultados apoyan o refutan las predicciones de la hipótesis (ej. ¿es la diferencia entre tratamientos estadísticamente significativa?).
+\item
+  \textbf{Interpretación y Conclusiones:} Se evalúa si los resultados son consistentes con la hipótesis. Si se rechaza la hipótesis nula y los resultados apoyan la hipótesis alternativa, esta gana credibilidad (pero nunca se ``prueba'' de forma absoluta). Si los resultados no la apoyan, la hipótesis debe ser rechazada o modificada. El proceso es iterativo: los resultados de un estudio a menudo generan nuevas preguntas y nuevas hipótesis, refinando continuamente nuestro entendimiento.
+\end{enumerate}
+
+En resumen, la Ecología avanza mediante un ciclo continuo de observación, generación de hipótesis explicativas y falsificables, diseño de pruebas rigurosas (sean modelos, experimentos controlados o estudios observacionales bien diseñados) y análisis crítico de los resultados para construir un cuerpo de conocimiento fiable sobre las complejas interacciones que gobiernan la vida en la Tierra.
+
+\subsection*{El papel de la estadística}\label{estad}
+\addcontentsline{toc}{subsection}{El papel de la estadística}
+
+La estadística juega un papel absolutamente fundamental y transversal en la aplicación del método científico dentro de la Ecología. Sin las herramientas estadísticas, sería prácticamente imposible extraer conclusiones válidas y objetivas de las observaciones y experimentos que realizamos en sistemas naturales, los cuales se caracterizan por su complejidad y variabilidad inherente.
+
+Podemos desglosar el papel de la estadística en las distintas fases del método científico aplicado a la Ecología:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Observación y Planteamiento de Preguntas:} Si bien la estadística no interviene directamente en la observación inicial de un fenómeno (por ejemplo, notar que hay menos aves en una zona contaminada que en una prístina), sí es crucial para cuantificar esa observación inicial. Podríamos usar estadísticas descriptivas básicas (como contar el número de individuos o especies en cada zona) para tener una primera idea de la magnitud del patrón observado. Esto ayuda a formular preguntas más precisas.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplo:} Observamos que ciertas plantas parecen crecer más cerca del río que lejos de él. La estadística nos ayudaría a cuantificar esa observación inicial midiendo la altura media o biomasa en transectos a diferentes distancias del río.
+  \end{itemize}
+\item
+  \textbf{Generación de Hipótesis:} Las hipótesis en ecología a menudo postulan relaciones entre variables o diferencias entre grupos. Estas hipótesis deben ser contrastables, y la estadística proporciona el marco para ello. La hipótesis nula (H₀), un concepto estadístico clave, postula que no existe el efecto o diferencia que sospechamos (p.~ej., ``la contaminación no afecta al número de aves''). La hipótesis alternativa (H₁) postula que sí existe tal efecto (``la contaminación reduce el número de aves'').
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplo:} Basándonos en la observación anterior, podríamos hipotetizar que ``la humedad del suelo influye positivamente en el crecimiento de la planta X''. La hipótesis nula sería ``la humedad del suelo no influye en el crecimiento de la planta X''.
+  \end{itemize}
+\item
+  \textbf{Diseño Experimental o de Muestreo:} ¡Esta es una fase crítica donde la estadística es esencial! Para poder contrastar una hipótesis de forma robusta, necesitamos diseñar un experimento o un plan de muestreo adecuado. La estadística nos ayuda a:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Determinar el tamaño muestral:} ¿Cuántas parcelas, individuos u observaciones necesitamos para tener suficiente potencia estadística para detectar un efecto si realmente existe? Un tamaño muestral insuficiente puede llevarnos a concluir erróneamente que no hay efecto (Error Tipo II).
+  \item
+    \textbf{Asegurar la aleatorización:} Para evitar sesgos, las unidades experimentales (p.~ej., parcelas donde aplicamos un tratamiento) deben asignarse aleatoriamente. En muestreos, la selección de puntos o individuos debe ser aleatoria o sistemática para garantizar la representatividad.
+  \item
+    \textbf{Incluir réplicas:} Repetir las mediciones en diferentes unidades experimentales independientes es crucial para estimar la variabilidad natural y aislar el efecto del tratamiento o factor estudiado.
+  \item
+    \textbf{Controlar variables:} Identificar y, si es posible, controlar o medir covariables que puedan influir en la variable respuesta (p.~ej., si estudiamos el efecto del nutriente A, controlar que todas las parcelas reciban la misma luz y agua).
+  \item
+    \emph{Ejemplo:} Para probar la hipótesis sobre la humedad del suelo, podríamos diseñar un experimento con varios niveles de riego controlados (tratamientos), asignados aleatoriamente a diferentes macetas (unidades experimentales), cada una con varias plantas (réplicas dentro de la unidad), asegurando condiciones de luz y temperatura constantes. O bien, podríamos diseñar un muestreo estratificado en campo, midiendo crecimiento y humedad en múltiples puntos dentro de zonas definidas por su distancia al río (estratos).
+  \end{itemize}
+\item
+  \textbf{Recogida y Análisis de Datos:} Una vez recogidos los datos, la estadística es la herramienta principal para analizarlos.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Estadística Descriptiva:} Resumir y visualizar los datos (medias, medianas, desviaciones estándar, varianzas, histogramas, diagramas de caja, gráficos de dispersión) para entender los patrones generales.
+  \item
+    \textbf{Estadística Inferencial:} Aquí es donde contrastamos formalmente nuestras hipótesis. Utilizamos pruebas estadísticas (como la prueba t de Student, ANOVA, regresión lineal, correlación, Chi-cuadrado, etc.) para determinar la probabilidad (el famoso \emph{p}-valor) de obtener nuestros resultados (o unos más extremos) si la hipótesis nula fuera cierta. Si esta probabilidad es muy baja (normalmente por debajo de 0.05 o 5\%), rechazamos la H₀ y aceptamos la H₁, concluyendo que hemos encontrado un efecto estadísticamente significativo.
+  \item
+    \textbf{Modelización:} Crear modelos matemáticos y estadísticos que representen las relaciones ecológicas y permitan hacer predicciones (p.~ej., modelos de crecimiento poblacional, modelos de distribución de especies basados en variables ambientales).
+  \end{itemize}
+\item
+  \textbf{Interpretación y Conclusiones:} La estadística nos ayuda a interpretar los resultados de forma objetiva. Un resultado ``estadísticamente significativo'' nos da confianza en que el patrón observado no se debe simplemente al azar. La estadística también nos permite cuantificar la incertidumbre asociada a nuestras estimaciones (mediante intervalos de confianza).
+\end{enumerate}
+
+En resumen, la estadística impregna todo el proceso científico en Ecología, desde la cuantificación inicial de patrones hasta el diseño riguroso de estudios, el análisis objetivo de datos y la interpretación de resultados con una medida de la incertidumbre. Nos permite navegar la variabilidad natural y extraer conclusiones fiables sobre cómo funcionan los complejos sistemas ecológicos.
+
+\section*{Aproximaciones al estudio de la Ecología - perspectiva reduccionista y holista. Ecología evolutiva y Ecología Termodinámica. Propiedades emergentes.}\label{aproximaciones}
+\addcontentsline{toc}{section}{Aproximaciones al estudio de la Ecología - perspectiva reduccionista y holista. Ecología evolutiva y Ecología Termodinámica. Propiedades emergentes.}
+
+La Ecología, al estudiar las interacciones entre los organismos y su ambiente en múltiples niveles de organización, se beneficia enormemente de diversos enfoques metodológicos y conceptuales. Vamos a detallar las perspectivas que menciona:
+
+\subsection*{\texorpdfstring{\textbf{Perspectiva Reduccionista y Holista}}{Perspectiva Reduccionista y Holista}}\label{reducholism}
+\addcontentsline{toc}{subsection}{\textbf{Perspectiva Reduccionista y Holista}}
+
+Estas dos perspectivas representan extremos de un continuo en cómo abordamos el estudio de sistemas complejos como los ecológicos.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Aproximación Reduccionista:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Concepto:} Sostiene que para comprender un sistema complejo, primero debemos entender sus partes constituyentes. Se enfoca en descomponer el sistema (por ejemplo, un ecosistema) en niveles de organización inferiores (poblaciones, individuos, órganos, etc.) y estudiar sus propiedades y funcionamientos individuales. La idea es que el conocimiento de las partes permitirá, eventualmente, entender el todo.
+  \item
+    \textbf{Aplicación en Ecología:} Un ecólogo reduccionista podría estudiar la fisiología de una especie particular de planta para entender cómo responde a la sequía, o analizar el comportamiento de forrajeo de un depredador específico para comprender su impacto en la presa.
+  \item
+    \textbf{Ejemplos:}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Estudiar la tasa fotosintética de una especie vegetal bajo diferentes condiciones de luz para modelar la productividad primaria de un bosque.
+    \item
+      Analizar la cinética enzimática de bacterias descomponedoras para entender las tasas de mineralización de nutrientes en el suelo.
+    \item
+      Investigar la respuesta de escape de una especie de peces ante la presencia de un depredador para entender la dinámica depredador-presa.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Aproximación Holista:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Concepto:} Enfatiza que las propiedades del sistema completo no pueden ser completamente entendidas estudiando únicamente sus partes aisladas. Se centra en las interconexiones, las interacciones y las propiedades que emergen en niveles de organización superiores. Considera al \textbf{sistema} (población, comunidad, ecosistema) como una entidad con características propias.
+  \item
+    \textbf{Aplicación en Ecología:} Un ecólogo holista se enfocaría en el flujo de energía a través de toda una red trófica, en los patrones de sucesión ecológica en una comunidad, o en la resiliencia de un ecosistema frente a perturbaciones.
+  \item
+    \textbf{Ejemplos:}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Estudiar los ciclos biogeoquímicos (carbono, nitrógeno) a escala de ecosistema, considerando las interacciones entre productores, consumidores, descomponedores y el ambiente abiótico.
+    \item
+      Analizar la estructura y estabilidad de una red alimentaria completa en un lago.
+    \item
+      Investigar cómo la diversidad de especies afecta la productividad o la estabilidad de un pastizal.
+    \item
+      Modelar la dinámica de una metapoblación, considerando los flujos de individuos entre parches de hábitat.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Complementariedad:} Es crucial entender que ambas aproximaciones no son mutuamente excluyentes, sino complementarias. Una comprensión profunda de la Ecología requiere integrar conocimientos obtenidos desde ambas perspectivas. El estudio detallado de los componentes (reduccionismo) informa nuestra comprensión de cómo funciona el sistema en su conjunto (holismo), y las propiedades observadas a nivel de sistema (holismo) guían las preguntas sobre el funcionamiento de sus partes (reduccionismo).
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Ecología Evolutiva}}{Ecología Evolutiva}}\label{ecoevo}
+\addcontentsline{toc}{subsection}{\textbf{Ecología Evolutiva}}
+
+Esta rama de la ecología se alinea con el \textbf{enfoque reduccionista}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Concepto:} Esta subdisciplina se sitúa en la interfaz entre la Ecología y la Biología Evolutiva. Examina cómo las interacciones ecológicas (entre organismos y entre organismos y su ambiente) actúan como fuerzas de selección natural, moldeando la evolución de las especies, y a su vez, cómo la historia evolutiva y las adaptaciones de las especies influyen en sus interacciones ecológicas y en la estructura de las comunidades y ecosistemas. Se pregunta el ``por qué'' adaptativo detrás de los patrones ecológicos.
+\item
+  \textbf{Aplicación en Ecología:} Analiza la evolución de historias de vida (cuándo reproducirse, cuántas crías tener), la coevolución entre especies que interactúan (depredador-presa, parásito-hospedador, mutualistas), la adaptación a condiciones ambientales locales, la especiación ecológica, etc.
+\item
+  \textbf{Ejemplos:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Estudiar cómo la presión de depredación ha favorecido la evolución de diferentes coloraciones (camuflaje, aposematismo) en poblaciones de insectos.
+  \item
+    Investigar cómo la competencia por recursos ha influido en la evolución del tamaño y forma del pico en diferentes especies de pinzones de Galápagos.
+  \item
+    Analizar la evolución de la resistencia a herbicidas en plantas arvenses como respuesta a prácticas agrícolas.
+  \item
+    Comprender por qué las estrategias reproductivas (por ejemplo, semelparidad vs.~iteroparidad) varían entre especies en función de la predictibilidad ambiental y la mortalidad adulta.
+  \item
+    Estudiar la coevolución entre plantas y sus polinizadores específicos.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Ecología Termodinámica}}{Ecología Termodinámica}}\label{termodin}
+\addcontentsline{toc}{subsection}{\textbf{Ecología Termodinámica}}
+
+Esta rama de la ecología se asocia con el \textbf{enfoque holista}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Concepto:} Aplica los principios de la termodinámica, especialmente las leyes sobre la conservación y transformación de la energía y el aumento de la entropía, al estudio de los ecosistemas. Considera a los ecosistemas como sistemas termodinámicos abiertos que capturan, transforman, almacenan y disipan energía.
+\item
+  \textbf{Aplicación en Ecología:} Se centra en el análisis de los flujos de energía y materia a través de los ecosistemas, la eficiencia de la transferencia de energía entre niveles tróficos, la producción primaria y secundaria, y cómo los ecosistemas se organizan y mantienen su estructura disipando energía.
+\item
+  \textbf{Ejemplos:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Calcular la eficiencia ecológica (la proporción de energía transferida de un nivel trófico al siguiente), que típicamente ronda el 10\%.
+  \item
+    Construir balances energéticos para un ecosistema, cuantificando la energía solar fijada por los productores (Producción Primaria Bruta; PPB), la energía perdida por respiración y la energía acumulada como biomasa (Producción Primaria Neta; PPN).
+  \item
+    Analizar cómo la estructura de la red trófica influye en la tasa de disipación de energía del ecosistema.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Propiedades Emergentes}}{Propiedades Emergentes}}\label{emerg}
+\addcontentsline{toc}{subsection}{\textbf{Propiedades Emergentes}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Concepto:} Son características o comportamientos de un sistema que surgen de las interacciones entre sus componentes individuales, pero que no son simplemente la suma de las propiedades de esos componentes. Estas propiedades sólo se manifiestan cuando las partes interactúan en el contexto del sistema completo. Están intrínsecamente ligadas a la perspectiva holista.
+\item
+  \textbf{Aplicación en Ecología:} La Ecología está repleta de propiedades emergentes, ya que estudia sistemas complejos en múltiples niveles de organización.
+\item
+  \textbf{Ejemplos:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Nivel de Población:} La tasa de crecimiento poblacional (r), la capacidad de carga (K), la regulación denso-dependiente, la estructura de edades estable. Un individuo nace o muere, pero no tiene una ``tasa de crecimiento'' o una ``capacidad de carga'' intrínseca.
+  \item
+    \textbf{Nivel de Comunidad:} La diversidad de especies, la estructura trófica (cadenas y redes alimentarias), la resistencia y resiliencia de la comunidad ante perturbaciones, los patrones de sucesión ecológica. Estas propiedades surgen de las interacciones (competencia, depredación, mutualismo, etc.) entre las diferentes poblaciones.
+  \item
+    \textbf{Nivel de Ecosistema:} El ciclado de nutrientes, la productividad del ecosistema (PPN), la eficiencia en el uso de recursos, la descomposición. Estas resultan de la interacción entre la comunidad biótica y los factores abióticos.
+  \item
+    \textbf{Comportamiento Colectivo:} La formación de bancos de peces o bandadas de aves, la construcción de termiteros, la sincronización del canto en insectos o ranas. Son patrones complejos que emergen de reglas de interacción simples entre individuos.
+  \end{itemize}
+\end{itemize}
+
+En resumen, la Ecología es una ciencia rica y multifacética que se nutre de estas diversas aproximaciones. El enfoque reduccionista nos ayuda a entender los mecanismos subyacentes, el holista nos permite ver el panorama general y las propiedades emergentes, la perspectiva evolutiva nos da el contexto histórico y adaptativo, y la termodinámica nos proporciona un marco fundamental basado en los flujos de energía. Utilizar e integrar estas perspectivas nos permite construir una comprensión más completa y robusta de cómo funciona la naturaleza.
+
+\section*{Subdisciplinas ecológicas - niveles de integración}\label{subdnintegr}
+\addcontentsline{toc}{section}{Subdisciplinas ecológicas - niveles de integración}
+
+\subsection*{\texorpdfstring{\textbf{Niveles de Integración (o Niveles de Organización) en Ecología}}{Niveles de Integración (o Niveles de Organización) en Ecología}}\label{nintegr}
+\addcontentsline{toc}{subsection}{\textbf{Niveles de Integración (o Niveles de Organización) en Ecología}}
+
+La Ecología estudia las interacciones en una amplia gama de escalas. Para facilitar este estudio, se reconoce una jerarquía de niveles de organización biológica, donde cada nivel superior incluye a los inferiores y exhibe propiedades emergentes (como discutimos anteriormente). Estos niveles son:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Individuo (u organismo):} Es la unidad fundamental de la Ecología. En este nivel, nos centramos en cómo un organismo individual (sea una bacteria, una planta, un hongo o un animal) interactúa con su ambiente físico (abiótico) y biológico (otros organismos), y cómo sus características morfológicas, fisiológicas y comportamentales le permiten sobrevivir y reproducirse.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplos:} El estudio de la tolerancia a la temperatura de un pez específico, las adaptaciones de un cactus a la aridez, la estrategia de caza de un lobo solitario.
+  \end{itemize}
+\item
+  \textbf{Población:} Conjunto de individuos de la \emph{misma especie} que viven en un área geográfica determinada y en un momento específico, y que interactúan entre sí (reproducción, competencia intraespecífica). La Ecología de Poblaciones estudia factores como el tamaño poblacional, la densidad, la distribución espacial, la estructura de edades y sexos, y las tasas de natalidad, mortalidad e inmigración/emigración que determinan su dinámica.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplos:} Analizar el crecimiento de una población de conejos en una isla, determinar los factores que limitan la densidad de pinos en un bosque, estudiar la distribución por edades de una población de tortugas marinas.
+  \end{itemize}
+\item
+  \textbf{Comunidad:} Conjunto de poblaciones de \emph{diferentes especies} que viven e interactúan en la misma área geográfica. La Ecología de Comunidades se enfoca en la naturaleza de estas interacciones (competencia, depredación, parasitismo, mutualismo, comensalismo), la diversidad de especies, la estructura de la comunidad (ej. redes tróficas) y los procesos como la sucesión ecológica.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplos:} Estudiar cómo la presencia de un depredador afecta la coexistencia de varias especies presa, analizar la red alimentaria de un arrecife de coral, investigar cómo cambia la composición de especies vegetales después de un incendio (sucesión).
+  \end{itemize}
+\item
+  \textbf{Ecosistema:} Incluye a la comunidad biológica (todas las especies interactuantes) \emph{junto con} su ambiente físico o abiótico (suelo, agua, clima, luz solar, nutrientes). La Ecología de Ecosistemas se centra en los flujos de energía y el ciclo de la materia a través de los componentes bióticos y abióticos.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplos:} Cuantificar el flujo de energía desde los productores (plantas) hasta los consumidores en una pradera, estudiar el ciclo del nitrógeno en un lago, analizar cómo la deforestación afecta el ciclo hidrológico local.
+  \end{itemize}
+\item
+  \textbf{Paisaje:} Mosaico heterogéneo de ecosistemas interactuantes en una región geográfica más amplia. La Ecología del Paisaje estudia la estructura espacial de los paisajes (composición y configuración de los parches de ecosistemas), cómo esta estructura afecta los procesos ecológicos (como el movimiento de organismos o el flujo de nutrientes entre ecosistemas) y cómo cambia con el tiempo debido a factores naturales o humanos.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplos:} Investigar cómo la fragmentación de un bosque afecta la dispersión de las aves, estudiar el papel de los corredores ecológicos para conectar poblaciones de mamíferos, analizar el impacto de la urbanización en los patrones de drenaje de un área.
+  \end{itemize}
+\item
+  \textbf{Bioma:} Grandes unidades ecológicas regionales caracterizadas por un tipo particular de clima y una forma de vida vegetal dominante. Son reconocibles a escala continental.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplos:} La tundra ártica, el bosque tropical lluvioso, el desierto subtropical, la taiga (bosque boreal), la sabana.
+  \end{itemize}
+\item
+  \textbf{Biosfera (o Ecósfera):} Es el nivel más alto de organización ecológica. Comprende la suma de todos los ecosistemas del planeta Tierra, es decir, la parte del planeta donde existe vida, incluyendo las interacciones a escala global entre los organismos y la litosfera, hidrosfera y atmósfera. La Ecología Global estudia procesos a esta escala.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Ejemplos:} El ciclo global del carbono y su relación con el cambio climático, los patrones globales de biodiversidad, el impacto de la contaminación atmosférica a gran escala.
+  \end{itemize}
+\end{itemize}
+
+Es importante recordar que estos niveles están interconectados y lo que ocurre en un nivel puede influir en los demás.
+
+\subsection*{\texorpdfstring{\textbf{Subdisciplinas Ecológicas}}{Subdisciplinas Ecológicas}}\label{subdisc}
+\addcontentsline{toc}{subsection}{\textbf{Subdisciplinas Ecológicas}}
+
+Dada la amplitud temática y la variedad de enfoques y escalas, la Ecología se ha diversificado en numerosas subdisciplinas. Estas a menudo se solapan y se definen según diferentes criterios:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Según el nivel de organización principal:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Autoecología:} Estudio del individuo y sus interacciones con el ambiente (solapa con Ecofisiología y Ecología del Comportamiento).
+  \item
+    \textbf{Ecología de Poblaciones (Demoecología):} Enfocada en la dinámica de las poblaciones.
+  \item
+    \textbf{Ecología de Comunidades (Sinecología):} Centrada en las interacciones entre especies y la estructura comunitaria.
+  \item
+    \textbf{Ecología de Ecosistemas:} Estudio de los flujos de energía y materia.
+  \item
+    \textbf{Ecología del Paisaje:} Análisis de patrones y procesos a escala de paisaje.
+  \item
+    \textbf{Ecología Global:} Investigación de procesos a escala planetaria.
+  \item
+    \textbf{Macroecología:} Busca patrones estadísticos generales en la distribución, abundancia y diversidad de especies a grandes escalas espaciales y temporales.
+  \end{itemize}
+\item
+  \textbf{Según el grupo taxonómico estudiado:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Ecología Vegetal:} Centrada en las plantas.
+  \item
+    \textbf{Ecología Animal:} Centrada en los animales.
+  \item
+    \textbf{Ecología Microbiana:} Centrada en microorganismos (bacterias, arqueas, protistas, hongos microscópicos).
+  \end{itemize}
+\item
+  \textbf{Según el tipo de ambiente o hábitat:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Ecología Terrestre:} Estudia los ecosistemas terrestres.
+  \item
+    \textbf{Ecología Acuática:} Estudia los ecosistemas acuáticos, que a su vez se divide en:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Limnología:} Ecología de aguas continentales (lagos, ríos, humedales).
+    \item
+      \textbf{Ecología Marina:} Ecología de océanos y mares.
+    \end{itemize}
+  \item
+    \textbf{Ecología del Suelo:} Enfocada en los organismos y procesos del suelo.
+  \item
+    \textbf{Ecología Urbana:} Estudia los ecosistemas en entornos urbanos.
+  \end{itemize}
+\item
+  \textbf{Según el enfoque o la perspectiva metodológica:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Ecología Evolutiva:} Integra ecología y evolución (como vimos antes).
+  \item
+    \textbf{Ecología del Comportamiento:} Estudia la base ecológica y evolutiva del comportamiento animal.
+  \item
+    \textbf{Ecología Fisiológica (Ecofisiología):} Investiga cómo la fisiología de los organismos determina sus interacciones ecológicas.
+  \item
+    \textbf{Ecología Química:} Se centra en el papel de las sustancias químicas en las interacciones entre organismos y entre organismos y su ambiente.
+  \item
+    \textbf{Ecología Molecular:} Utiliza herramientas moleculares (ADN, ARN, proteínas) para abordar cuestiones ecológicas (ej. filogeografía, genética de poblaciones, identificación de especies).
+  \item
+    \textbf{Ecología Teórica:} Desarrolla modelos matemáticos y computacionales para comprender principios ecológicos.
+  \item
+    \textbf{Ecología Funcional:} Se enfoca en los rasgos (\emph{traits}) de los organismos y cómo estos determinan las funciones ecosistémicas, más que en la identidad taxonómica.
+  \end{itemize}
+\item
+  \textbf{Según su aplicación:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Ecología de la Conservación:} Aplica principios ecológicos para la protección y manejo de la biodiversidad.
+  \item
+    \textbf{Ecología de la Restauración:} Busca restaurar ecosistemas degradados.
+  \item
+    \textbf{Agroecología:} Aplica principios ecológicos al diseño y manejo de sistemas agrícolas sostenibles.
+  \item
+    \textbf{Ecología Industrial:} Busca optimizar los flujos de materia y energía en los sistemas industriales inspirándose en los ecosistemas naturales.
+  \item
+    \textbf{Ecología Humana:} Estudia las interacciones entre las sociedades humanas y su ambiente.
+  \item
+    \textbf{Toxicología Ambiental (Ecotoxicología):} Estudia los efectos de los contaminantes en los organismos y ecosistemas.
+  \end{itemize}
+\end{itemize}
+
+Esta lista no es exhaustiva y continuamente surgen nuevas áreas de especialización. La fortaleza de la Ecología reside en su capacidad para integrar conocimientos de estos distintos niveles y subdisciplinas para abordar la complejidad del mundo natural.
+
+\chapter*{Tema 2}\label{tema2}
+\addcontentsline{toc}{chapter}{Tema 2}
+
+\section*{Factores ecológicos. Condiciones y recursos}\label{condrec}
+\addcontentsline{toc}{section}{Factores ecológicos. Condiciones y recursos}
+
+En términos generales, los \textbf{factores ecológicos} son todos aquellos componentes del ambiente, tanto abióticos (físicos y químicos) como bióticos (otros organismos), que afectan a los seres vivos, influyendo en su supervivencia, crecimiento, desarrollo, reproducción y, en última instancia, en su distribución y abundancia.
+
+La distinción clave entre condiciones y recursos radica en cómo interactúan los organismos con ellos:
+
+\subsection*{\texorpdfstring{\textbf{Condiciones}}{Condiciones}}\label{condiciones}
+\addcontentsline{toc}{subsection}{\textbf{Condiciones}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Definición:} Las condiciones son factores ambientales abióticos que varían en el espacio y en el tiempo y a los cuales los organismos responden de forma diferente (con rangos de tolerancia, óptimos, etc.), pero que \textbf{no son consumidos ni agotados} por la actividad de los propios organismos. Influyen en las tasas de los procesos fisiológicos (metabolismo, crecimiento, etc.) pero no se ``gastan''.
+\item
+  \textbf{Características Clave:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    No son consumibles ni reducibles por los organismos.
+  \item
+    Los organismos suelen presentar respuestas fisiológicas específicas (curvas de tolerancia) con límites mínimos y máximos, y un rango óptimo.
+  \item
+    Pueden ser modificadas por la presencia de organismos (ej. la sombra de un árbol modifica la temperatura del suelo), pero no son ``utilizadas'' en el sentido de agotamiento.
+  \end{itemize}
+\item
+  \textbf{Ejemplos:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Temperatura:} Un factor físico crucial que afecta la tasa metabólica, la actividad enzimática y la distribución geográfica de las especies. Los organismos son poiquilotermos (su temperatura varía con el ambiente) u homeotermos (regulan su temperatura interna), pero no ``consumen'' la temperatura. Por ejemplo, las heladas pueden matar a ciertas plantas (condición letal), mientras que otras tienen adaptaciones para sobrevivir (tolerancia).
+  \item
+    \textbf{pH (acidez o alcalinidad):} Afecta la fisiología celular y la disponibilidad de nutrientes en el suelo o el agua. Las plantas y los microorganismos del suelo tienen rangos de pH óptimos para su crecimiento. Los organismos acuáticos también son sensibles a cambios en el pH del agua.
+  \item
+    \textbf{Salinidad:} La concentración de sales disueltas, especialmente importante en ambientes acuáticos y suelos costeros o áridos. Afecta el balance hídrico y osmótico de los organismos. Por ejemplo, la mayoría de los peces de agua dulce no pueden sobrevivir en agua de mar y viceversa debido a esta condición.
+  \item
+    \textbf{Humedad relativa del aire / Potencial hídrico del suelo:} Determinan la disponibilidad de agua para los organismos terrestres, afectando la transpiración en plantas y la pérdida de agua en animales.
+  \item
+    \textbf{Velocidad de la corriente (agua o viento):} Puede afectar la capacidad de los organismos para mantenerse en un lugar, su morfología (ej. plantas achatadas por el viento), la dispersión de propágulos, etc. No es consumida.
+  \item
+    \textbf{Concentración de tóxicos o contaminantes:} Sustancias como metales pesados o pesticidas actúan como condiciones estresantes o letales, afectando la fisiología sin ser ``consumidas'' en el sentido ecológico de un recurso.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Recursos}}{Recursos}}\label{recursos}
+\addcontentsline{toc}{subsection}{\textbf{Recursos}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Definición:} Los recursos son todas aquellas ``cosas'' (energía, materia, espacio) que \textbf{son consumidas o utilizadas} por los organismos para su mantenimiento, crecimiento y reproducción. Como resultado de este consumo, la cantidad de recurso disponible para otros organismos (o para el mismo organismo en el futuro) disminuye. Son el objeto de la competencia.
+\item
+  \textbf{Características Clave:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Son consumibles y, por tanto, potencialmente agotables o limitantes.
+  \item
+    Su disponibilidad afecta directamente las tasas de crecimiento poblacional.
+  \item
+    Los organismos pueden competir por ellos (competencia intraespecífica e interespecífica).
+  \end{itemize}
+\item
+  \textbf{Ejemplos:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Energía:}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \emph{Radiación solar:} Recurso energético fundamental para los organismos fotosintéticos (plantas, algas, cianobacterias). La competencia por la luz es evidente en los bosques.
+    \item
+      \emph{Energía química:} Contenida en las moléculas orgánicas que consumen los heterótrofos (herbívoros, carnívoros, detritívoros, descomponedores). El alimento es un recurso clave.
+    \end{itemize}
+  \item
+    \textbf{Materia / Nutrientes:}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \emph{Agua:} Esencial para todos los organismos. Aunque es una condición en el medio acuático, en el medio terrestre es claramente consumida (bebida por animales, absorbida por plantas) y su disponibilidad puede ser limitante y generar competencia.
+    \item
+      \emph{Nutrientes minerales:} Elementos como Nitrógeno (N), Fósforo (P), Potasio (K), etc., que las plantas absorben del suelo y los microorganismos del medio. A menudo son limitantes para el crecimiento vegetal o microbiano.
+    \item
+      \emph{Dióxido de Carbono (CO₂):} Recurso para la fotosíntesis.
+    \item
+      \emph{Oxígeno (O₂):} Recurso para la respiración aeróbica. Aunque es una condición en ambientes terrestres, representa un recurso en ambientes acuáticos donde su concentración puede ser baja.
+    \end{itemize}
+  \item
+    \textbf{Espacio:}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \emph{Territorio:} Área defendida por un animal que contiene recursos necesarios (alimento, refugio, parejas).
+    \item
+      \emph{Sitios de anidación o refugio:} Cavidades en árboles, madrigueras, etc.
+    \item
+      \emph{Espacio para crecer:} Para organismos sésiles como plantas, corales o percebes, el espacio físico sobre el sustrato es un recurso esencial para establecerse, crecer y acceder a otros recursos como la luz o los nutrientes del agua.
+    \end{itemize}
+  \item
+    \textbf{Alimento/Presas:} El recurso más obvio para los consumidores.
+  \item
+    \textbf{Parejas sexuales:} Desde una perspectiva poblacional, el acceso a parejas puede considerarse un recurso limitante para la reproducción.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Distinción clave resumida entre condición y recurso}}{Distinción clave resumida entre condición y recurso}}\label{condrec}
+\addcontentsline{toc}{subsection}{\textbf{Distinción clave resumida entre condición y recurso}}
+
+Las condiciones establecen el marco ambiental donde la vida es posible y afectan a cómo funcionan los organismos, mientras que los recursos son lo que los organismos consumen para vivir, crecer y reproducirse, y por lo cual compiten.
+
+Es importante notar que la distinción no siempre es absolutamente nítida. El agua, por ejemplo, es consumida (recurso) pero su presencia o ausencia general en el ambiente (humedad) también actúa como una condición. Sin embargo, esta clasificación es muy valiosa conceptualmente para analizar cómo los diferentes aspectos del ambiente influyen en los organismos y estructuran las comunidades ecológicas.
+
+\section*{Factores limitantes. Ley de tolerancia de Shelford. Ley del mínimo de Liebig}\label{factlim}
+\addcontentsline{toc}{section}{Factores limitantes. Ley de tolerancia de Shelford. Ley del mínimo de Liebig}
+
+Continuando con nuestro análisis de los factores ecológicos, es esencial comprender los conceptos de \textbf{factores limitantes} y las dos leyes fundamentales que nos ayudan a entender cómo estos factores operan: la \textbf{Ley del Mínimo de Liebig} y la \textbf{Ley de Tolerancia de Shelford}. Estos conceptos son cruciales para explicar por qué los organismos viven donde viven y por qué sus poblaciones tienen el tamaño que tienen.
+
+\textbf{Factores Limitantes} \{-\#flim\}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Concepto General:} Un factor limitante es cualquier factor ambiental, ya sea una condición o un recurso, cuya escasez, ausencia, o nivel desfavorable restringe el crecimiento, la abundancia o la distribución de una población de organismos en un ecosistema.
+\end{itemize}
+
+Aunque muchos factores influyen sobre un organismo simultáneamente, a menudo uno o unos pocos ejercen la influencia predominante en un momento y lugar determinados, impidiendo que la población alcance su potencial máximo incluso si los demás factores son óptimos.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Importancia:} Identificar los factores limitantes es clave en ecología para entender la estructura de las comunidades, predecir los efectos del cambio ambiental, manejar especies (tanto para conservación como para control de plagas) y optimizar la producción agrícola o forestal.
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Ley del Mínimo de Liebig}}{Ley del Mínimo de Liebig}}\label{liebig}
+\addcontentsline{toc}{subsection}{\textbf{Ley del Mínimo de Liebig}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Origen:} Formulada originalmente por \textbf{Carl Sprengel} (1828) y popularizada por el químico alemán Justus von Liebig a mediados del siglo XIX, inicialmente en el contexto de la nutrición mineral de las plantas y el rendimiento de los cultivos.
+\item
+  \textbf{Enunciado:} La ley establece que el crecimiento de un organismo (o la productividad de una población o ecosistema) no está determinado por la cantidad total de todos los recursos disponibles, sino por el \textbf{recurso que se encuentra en la menor disponibilidad en relación con las necesidades del organismo}. Es decir, el recurso más escaso actúa como el ``factor limitante''.
+\item
+  \textbf{Analogía:} Se suele ilustrar con el ``barril de Liebig'': un barril hecho con duelas (tablas) de diferente longitud. La capacidad del barril para retener agua no depende de la longitud de las duelas más largas, sino de la longitud de la \textbf{duela más corta}. Esa duela representa el recurso limitante.
+\item
+  \textbf{Aplicación Principal:} Se aplica fundamentalmente a los \textbf{Recursos} (nutrientes, agua, luz, alimento, etc.).
+\item
+  \textbf{Ejemplos:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    El crecimiento del fitoplancton en muchas zonas oceánicas está limitado por la baja concentración de hierro o nitrógeno, aunque otros nutrientes como el fosfato sean abundantes. Añadir fosfato no aumentará el crecimiento; añadir el nutriente limitante sí lo hará, hasta que otro recurso pase a ser el más escaso.
+  \item
+    En muchos suelos agrícolas, el fósforo es el nutriente limitante para el crecimiento de los cultivos. La fertilización debe centrarse en suplir esa carencia específica.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Ley de Tolerancia de Shelford}}{Ley de Tolerancia de Shelford}}\label{shelford}
+\addcontentsline{toc}{subsection}{\textbf{Ley de Tolerancia de Shelford}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Origen:} Propuesta por el ecólogo estadounidense Victor E. Shelford en 1911, ampliando la idea de Liebig más allá de los recursos y la simple escasez.
+\item
+  \textbf{Enunciado:} La ley establece que la presencia, abundancia y éxito de un organismo dependen de un complejo de condiciones ambientales. Cada organismo tiene un \textbf{rango de tolerancia} (un mínimo y un máximo) para cada factor ambiental (principalmente \textbf{Condiciones} como temperatura, pH, salinidad, humedad, etc.). La supervivencia y prosperidad del organismo son posibles sólo dentro de este rango. Además, existe un \textbf{rango óptimo} dentro del rango de tolerancia donde el organismo funciona mejor. A medida que el factor se aleja del óptimo hacia los límites mínimo o máximo, el organismo experimenta estrés fisiológico, y más allá de esos límites, la supervivencia es imposible.
+\item
+  \textbf{Aspectos Clave:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Introduce la idea de que no solo la escasez (mínimo) puede ser limitante, sino también el exceso (máximo). Demasiado de algo bueno (ej. temperatura, luz, incluso agua) puede ser perjudicial o letal.
+  \item
+    Define conceptos como: límites de tolerancia (mínimo y máximo), zona óptima (donde el rendimiento es máximo), y zonas de estrés fisiológico (cercanas a los límites, donde la supervivencia es posible pero el rendimiento está reducido).
+  \item
+    Gráficamente, la respuesta de un organismo (ej. tasa de crecimiento, abundancia) frente a un gradiente de una condición suele representarse como una curva en forma de campana.
+  \end{itemize}
+\item
+  \textbf{Aplicación Principal:} Se aplica fundamentalmente a las \textbf{Condiciones} ambientales, aunque también puede aplicarse a recursos cuando el exceso es perjudicial.
+\item
+  \textbf{Ejemplos:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Los peces de aguas frías, como la trucha, tienen un rango de tolerancia a la temperatura relativamente estrecho y no pueden sobrevivir en aguas cálidas (límite máximo superado). Los peces tropicales, por otro lado, no sobreviven en aguas muy frías (límite mínimo no alcanzado). Dentro de su rango viable, cada especie tiene una temperatura óptima para su crecimiento y reproducción.
+  \item
+    La mayoría de las plantas cultivadas tienen una baja tolerancia a la salinidad del suelo. Su crecimiento se reduce drásticamente o mueren si la salinidad excede su límite máximo de tolerancia. Las plantas halófitas, en cambio, están adaptadas a vivir en suelos muy salinos.
+  \item
+    El pH del suelo determina qué especies de plantas pueden crecer en él. Algunas especies son acidófilas (toleran pH bajo), otras basófilas (toleran pH alto), y muchas tienen un rango óptimo cercano a la neutralidad.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{\texorpdfstring{\textbf{Integración de ambas leyes}}{Integración de ambas leyes}}\label{liebigshelford}
+\addcontentsline{toc}{subsection}{\textbf{Integración de ambas leyes}}
+
+Ambas leyes son complementarias para entender los factores limitantes. Liebig se enfoca en el recurso más escaso que frena el crecimiento, mientras que Shelford se enfoca en el rango de tolerancia para las condiciones ambientales (y a veces recursos), donde tanto la falta como el exceso pueden ser limitantes para la supervivencia y el éxito general de un organismo.
+
+Un organismo puede tener todos los recursos necesarios (según Liebig), pero si una condición ambiental como la temperatura cae fuera de su rango de tolerancia (según Shelford), no podrá sobrevivir en ese lugar.
+
+\bibliography{book.bib,packages.bib}
+
+\end{document}
